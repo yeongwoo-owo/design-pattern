@@ -1,4 +1,6 @@
-package iterator.example;
+package iterator.example.book;
+
+import java.util.Iterator;
 
 public class BookShelf implements Iterable<Book> {
     private Book[] books;
@@ -10,7 +12,7 @@ public class BookShelf implements Iterable<Book> {
 
     @Override
     public Iterator<Book> iterator() {
-        return null;
+        return new BookShelfIterator(this);
     }
 
     public Book getBookAt(int index) {

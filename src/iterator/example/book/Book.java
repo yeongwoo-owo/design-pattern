@@ -1,4 +1,4 @@
-package iterator.example;
+package iterator.example.book;
 
 public class Book {
     private String name;

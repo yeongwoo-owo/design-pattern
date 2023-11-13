@@ -1,19 +1,21 @@
-package iterator.example.book;
+package iterator.exercise.book;
+
+
+import iterator.exercise.linkedlist.Node;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class BookShelfIterator implements Iterator<Book> {
-    private BookShelf bookShelf;
-    private int index = 0;
+    private Node<Book> cur;
 
-    public BookShelfIterator(BookShelf bookShelf) {
-        this.bookShelf = bookShelf;
+    public BookShelfIterator(Node<Book> cur) {
+        this.cur = cur;
     }
 
     @Override
     public boolean hasNext() {
-        return index < bookShelf.getLength();
+        return cur.hasNext();
     }
 
     @Override
@@ -22,6 +24,8 @@ public class BookShelfIterator implements Iterator<Book> {
             throw new NoSuchElementException();
         }
 
-        return bookShelf.getBookAt(index++);
+        Book next = cur.getNext().getContent();
+        cur = cur.getNext();
+        return next;
     }
 }

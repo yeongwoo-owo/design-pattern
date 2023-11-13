@@ -1,29 +1,22 @@
-package iterator.example.book;
+package iterator.exercise.book;
+
+import iterator.exercise.linkedlist.LinkedList;
 
 import java.util.Iterator;
 
 public class BookShelf implements Iterable<Book> {
-    private Book[] books;
-    private int last = 0;
+    private LinkedList<Book> books;
 
-    public BookShelf(int maxSize) {
-        this.books = new Book[maxSize];
+    public BookShelf() {
+        this.books = new LinkedList<>();
     }
 
     @Override
     public Iterator<Book> iterator() {
-        return new BookShelfIterator(this);
-    }
-
-    public Book getBookAt(int index) {
-        return books[index];
+        return new BookShelfIterator(books.getHead());
     }
 
     public void appendBook(Book book) {
-        this.books[last++] = book;
-    }
-
-    public int getLength() {
-        return last;
+        books.insert(book);
     }
 }

@@ -13,7 +13,8 @@ public class LinkedList<T> {
         return head;
     }
 
-    public void insert(Node<T> node) {
+    public void insert(T content) {
+        Node<T> node = new Node<>(content);
         tail.setNext(node);
         tail = node;
     }

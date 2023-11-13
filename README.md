@@ -1,5 +1,5 @@
 # 디자인 패턴
-- [JAVA 언어로 배우는 디자인 패턴 입문](https://www.yes24.com/Product/Goods/115576266) 책을 읽고 학습한 내용을 정리한 레포지토리입니다.
+[JAVA 언어로 배우는 디자인 패턴 입문](https://www.yes24.com/Product/Goods/115576266) 책을 읽고 학습한 내용을 정리한 레포지토리입니다.
 
 ## 목차
 1. Iterator
@@ -25,3 +25,6 @@
 21. Proxy
 22. Command
 23. Interpreter
+
+## 정리 내용
+책을 읽고 정리한 내용은 [Notion](https://yeongwoo-owo.notion.site/JAVA-cd43f1a2ea594f3f8e1ac17d9acf28de?pvs=4)을 통해 정리하고 있습니다.
