@@ -17,5 +17,8 @@ public class Main {
         printAstre.print();
 
         // *Hello*
+
+        Printer kotlinPrinter = new PrintBannerAdapterBy(new AstreBanner(input));
+        kotlinPrinter.print();
     }
 }

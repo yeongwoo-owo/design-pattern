@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         String input = "Hello";
 
-        Printer printer = new PrintBannerDelegate(new Banner(input));
+        Printer printer = new PrintBannerAdapter(new Banner(input));
         printer.print();
 
         // (Hello)

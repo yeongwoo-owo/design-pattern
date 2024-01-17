@@ -7,7 +7,7 @@ public class Banner {
         this.string = string;
     }
 
-    public String formattedString() {
+    public String decorate() {
         return "(" + string + ")";
     }
 }

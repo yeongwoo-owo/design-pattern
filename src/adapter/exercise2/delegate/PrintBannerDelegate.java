@@ -12,6 +12,6 @@ public class PrintBannerDelegate implements Printer {
 
     @Override
     public void print() {
-        System.out.println(banner.formattedString());
+        System.out.println(banner.decorate());
     }
 }

@@ -8,7 +8,7 @@ public class AstreBanner implements Banner {
     }
 
     @Override
-    public String formattedString() {
+    public String decorate() {
         return "*" + string + "*";
     }
 }

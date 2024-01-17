@@ -10,6 +10,6 @@ public class PrintParanBannerInheritance extends ParanBanner implements Printer 
 
     @Override
     public void print() {
-        System.out.println(formattedString());
+        System.out.println(decorate());
     }
 }

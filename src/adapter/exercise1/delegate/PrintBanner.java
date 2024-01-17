@@ -13,6 +13,6 @@ public class PrintBanner extends Printer {
     @Override
     public void print() {
         super.print();
-        System.out.println(banner.formattedString());
+        System.out.println(banner.decorate());
     }
 }
